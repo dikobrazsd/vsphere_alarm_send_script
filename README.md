@@ -1,0 +1,1 @@
+# vsphere_alarm_send_script
