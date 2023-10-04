@@ -1,4 +1,4 @@
-# vsphere_alarm_send_script
+# vsphere alarm send script
 
 Script for passing VMWARE_ALARM environment to endpoint as JSON.
 
