@@ -8,6 +8,7 @@ Script can be enabled on vSphere Alarm menu.
 
 You might face the issue then script is not invoked. This is caused by vCenter  internal throttling. To disable it follow the official documentation: https://kb.vmware.com/s/article/57315
 
+```
 Connect to the vCenter server using powerCLI VI-Connect cmdlet, see Basic connecting to vCenter or a vSphere Host. 
 To list all the alarm definitions:
 Get-AlarmDefinition|format-list
@@ -25,3 +26,4 @@ $AlarmtoUpdate.ReconfigureAlarm($specNewAlarmInfo)
 To validate the changes:
 $AlarmtoUpdate=get-view -id (get-alarmDefinition -ID Alarm-alarm-97).id
 echo $AlarmtoUpdate.info.Setting
+```
